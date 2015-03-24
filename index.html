@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CSS Switch by maruthip25</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/maruthip25/css-switch">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/maruthip25/css-switch/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/maruthip25/css-switch/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>CSS Switch</h1>
+          <p>CSS Switch is a CSS rendered switch to switch between two CSS files</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/maruthip25">maruthip25</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><img src="https://raw.githubusercontent.com/maruthip25/css-switch/master/head.png" alt="CSS Switch"></p>
+
+<p>CSS Switch is a CSS rendered switch to switch between two CSS files <img class="emoji" title=":stuck_out_tongue_winking_eye:" alt=":stuck_out_tongue_winking_eye:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61c.png" height="20" width="20" align="absmiddle"></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li>
+<p>Include <code>css-switch.js</code> or <code>css-switch.min.js</code> in your HTML.</p>
+
+<pre><code>&lt;script src="css-switch.js" type="text/javascript"&gt;&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>Define an element in your HTML that will be dedicate to the switch. For Example:</p>
+
+<pre><code>&lt;div id="any-id-here"&gt;&lt;/div&gt;
+</code></pre>
+
+<p><em>Note: Please leave this element empty as its contents will be replaced by the switch</em></p>
+</li>
+<li>
+<p>Call the initSwitch() function with the following syntax.</p>
+
+<pre><code>initSwitch('path_to_one_css_file', 'path_to_another_css_file', 'id/class_of_the_element');
+</code></pre>
+
+<p>So, assuming we want to switch between style1.css and style2.css and want the following element to be converted into a switch</p>
+
+<pre><code>&lt;div id="css-switch"&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Then, add the following code to your HTML (after including <code>css-switch.js</code> or <code>css-switch.min.js</code>)</p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+  initSwitch("style1.css","style2.css","#css-switch");
+&lt;/script&gt;
+</code></pre>
+
+<p>You can also use classes instead of id's</p>
+
+<pre><code>&lt;div class="css-switch"&gt;&lt;/div&gt;
+...
+...
+</code></pre>
+
+<p>
+   
+<em>Please note that in this case, only the first element with the class "css-switch" will be converted into a switch.</em></p>
+</li>
+</ol>
+
+<p>Thats pretty much it.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-61122565-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
