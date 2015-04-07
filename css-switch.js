@@ -1,6 +1,6 @@
 // ==========================================================================
 // CSS Switch
-// css-switch.js v0.0
+// css-switch.js v0.1
 // https://github.com/maruthip25/css-switch
 // ==========================================================================
 // Created By: Maruthi Sharma (http://www.maruthisharma.com)
@@ -34,6 +34,12 @@ function switchCSS(offCSS, onCSS, button){
 
 /* function to render css-switch element */
 function initSwitch(offCSS, onCSS, element){
+	var h = document.getElementsByTagName('head').item(0);
+	var l = document.createElement("link");
+	l.type = "text/css";
+	l.href = offCSS;
+	l.rel = "stylesheet";
+	h.appendChild(l);
 	if(element.charAt(0)=='#'){
 		var button = document.getElementById(element.substr(1));
 	}
