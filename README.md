@@ -37,7 +37,7 @@ You can also use classes instead of id's
 
         <script type="text/javascript">
          initSwitch("style1.css","style2.css",".css-switch");
-       </script>
+        </script>
 
 
     *Please note that in this case, only the first element with the class "css-switch" will be converted into a switch.*
