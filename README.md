@@ -32,6 +32,16 @@ You can also use classes instead of id's
         </script>
 
 
+        <script src="css-switch.js" type="text/javascript"></script>
+
+
+        <script type="text/javascript">
+         initSwitch("style1.css","style2.css",".css-switch");
+        </script>
+
+
     *Please note that in this case, only the first element with the class "css-switch" will be converted into a switch.*
+
+** Note: Do not include either of the two css files using `<link>` tag. CSS Switch will automatically append the "offCSS" file to your head tag.**
 
 Thats pretty much it.
